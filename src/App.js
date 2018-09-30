@@ -27,6 +27,7 @@ class App extends Component {
         })
     })
     
+    // chatmanager
     chatManager.connect()
     .then(currentUser => {
         currentUser.subscribeToRoom({
@@ -47,29 +48,6 @@ class App extends Component {
     })
 }
              
-    // connect
-    // chatManager.connect()
-    // .then(currentUser =>  {
-
-    //   currentUser.subscribeToRoom({
-    //     roomId: 17308005,
-    //     hooks: {
-    //       onNewMessage: message => {
-    //           console.log('message.text ', message.text);
-    //       }
-
-    //     }
-    //   })
-    //  })
-  //   chatManager
-  // .connect()
-  // .then(currentUser => {
-  //   console.log("Connected as user ", currentUser);
-  // })
-  // .catch(error => {
-  //   console.error("error:", error);
-  // });
-
   
 
   render() {
